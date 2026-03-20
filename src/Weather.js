@@ -75,7 +75,7 @@ export default function Weather(props) {
         );
     } else {
         const apiKey = "84ob6879a3t305ff0c4b95aea130d3b6";
-        let city = "Miami";
+        
         let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=imperial`;
         axios.get(apiUrl).then(handleResponse);
 
