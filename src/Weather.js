@@ -16,8 +16,7 @@ export default function Weather(props) {
       city: response.data.city,
       description: response.data.condition.description,
       humidity: response.data.temperature.humidity,
-      iconUrl:
-        "https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_light.svg",
+      iconUrl: response.data.condition.icon_url,
     });
   }
 
@@ -28,11 +27,9 @@ export default function Weather(props) {
     axios.get(apiUrl).then(handleResponse);
   }
 
-
   function handleSubmit(event) {
     event.preventDefault();
     search(city);
-    
   }
 
   function handleCityChange(event) {
@@ -63,7 +60,6 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        
       </div>
     );
   } else {
