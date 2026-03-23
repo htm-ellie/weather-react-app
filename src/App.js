@@ -15,15 +15,23 @@ export default function App() {
           target="_blank"
           rel="noreferrer"
         >
-          Ellie Litt
+          Ellie Litt,
         </a>{" "}
-        and is{" "}
+        is open-sourced on{" "}
         <a
           href="https://github.com/htm-ellie/weather-react-app"
           target="_blank"
           rel="noreferrer"
         >
-          open-sourced on GitHub.
+          GitHub,{" "}
+        </a>
+        and is hosted on{" "}
+        <a
+          href="https://react-weather-app-elitt.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify.
         </a>
       </footer>
     </div>
