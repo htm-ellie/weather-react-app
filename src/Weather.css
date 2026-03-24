@@ -17,7 +17,7 @@
   font-size: 30px;
   font-weight: bold;
   margin: 20px 0 0 0;
-  line-height: 28.8px;
+  line-height: 40px;
 }
 
 .form-control {
@@ -73,4 +73,8 @@
 
 .TemperatureDisplay {
   height: 0;
+}
+
+.WeatherForecast {
+  padding-bottom: 16px;
 }
